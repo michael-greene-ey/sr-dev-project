@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Maven+Pro:wght@500&display=swap");
+
+.logo {
+  font-size: 10px;
+  margin-top: 2px;
+}
+
+.logoAndName {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  background-color: black;
+  color: white;
+  height: 50px;
+  padding: 0 1%;
+  font: italic bolder x-large "Maven Pro", sans-serif;
+}
+
+.navLinks {
+  display: flex;
+  gap: 50px;
+}
+
+.searchIcon {
+  color: blue;
+  margin: 2px;
+  position: absolute;
+}
+
+.searchNavInput {
+  display: flex;
+}
+
+.searchNavInput input {
+  border-radius: 10px;
+  align-items: center;
+  border-style: none;
+  height: 25px;
+  text-indent: 25px;
+  outline: none;
+  width: 250px;
+}
