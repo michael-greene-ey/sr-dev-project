@@ -27,6 +27,11 @@
   gap: 50px;
 }
 
+.navLinks > * {
+  text-decoration: none;
+  color: white;
+}
+
 .searchIcon {
   color: blue;
   margin: 2px;

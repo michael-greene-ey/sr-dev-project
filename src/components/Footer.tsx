@@ -2,40 +2,98 @@ import React from "react";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFacebookF,
+  faFacebook,
   faInstagram,
   faPinterest,
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-
 import styles from "./Footer.module.css";
+import { Link } from "react-router-dom";
+
+// {
+//   id: 1,
+//   iconName: "Facebook",
+//   url: "www.facebook.com",
+// },
+// {
+//   id: 2,
+//   iconName: "faInstagram",
+//   url: "www.facebook.com",
+// },
+// {
+//   id: 3,
+//   iconName: "faPinterest",
+//   url: "www.facebook.com",
+// },
+// {
+//   id: 4,
+//   iconName: "faTwitter",
+//   url: "www.facebook.com",
+// },
+// {
+//   id: 5,
+//   iconName: "faYoutube",
+//   url: "www.facebook.com",
+// },
+//];
+
+const footerIcons = [
+  {
+    id: 1,
+    iconName: "facebook",
+    iconCode: faFacebook,
+  },
+  { id: 2, iconName: "Instagram", iconCode: faInstagram },
+  { id: 3, iconName: "Pinterest", iconCode: faPinterest },
+  { id: 4, iconName: "Twitter", iconCode: faTwitter },
+  { id: 5, iconName: "Youtube", iconCode: faYoutube },
+];
 
 const Footer = () => {
   let copyright = String.fromCodePoint(0x00a9);
   return (
-    <div>
+    <div className={styles.footerContainer}>
       <div className={styles.topFooterContainer}>
         <div className={styles.logoContainer}>
           <FitnessCenterIcon className={styles.logo} />
         </div>
         <div className={styles.iconContainer}>
-          <span>
-            <FontAwesomeIcon icon={faFacebookF} size="lg" />
-          </span>
-          <span>
-            <FontAwesomeIcon icon={faInstagram} size="lg" />
-          </span>
-          <span>
-            <FontAwesomeIcon icon={faPinterest} size="lg" />
-          </span>
-          <span>
-            <FontAwesomeIcon icon={faTwitter} size="lg" />
-          </span>
-          <span>
-            <FontAwesomeIcon icon={faYoutube} size="lg" />
-          </span>
+          {footerIcons.map((icon) => {
+            return (
+              <a href={`https://www.${icon.iconName}.com`} target="_blank">
+                <FontAwesomeIcon icon={icon.iconCode} size="lg" />
+              </a>
+            );
+          })}
         </div>
+
+        {/* <a href="http://www.facebook.com" target="_blank">
+            <span>
+              <FontAwesomeIcon icon={faFacebook} size="lg" />
+            </span>
+          </a>
+          <a href="">
+            <span>
+              <FontAwesomeIcon icon={faInstagram} size="lg" />
+            </span>
+          </a>
+          <a href="">
+            <span>
+              <FontAwesomeIcon icon={faPinterest} size="lg" />
+            </span>
+          </a>
+          <a href="">
+            <span>
+              <FontAwesomeIcon icon={faTwitter} size="lg" />
+            </span>
+          </a>
+          <a href="">
+            <span>
+              <FontAwesomeIcon icon={faYoutube} size="lg" />
+            </span>
+          </a> */}
+        {/* </div> */}
       </div>
       <div className={styles.bottomFooterContainer}>
         <div className={styles.emailInbox}>
