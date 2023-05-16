@@ -1,4 +1,5 @@
 import React from "react";
+import { IconTypeInterface } from "../interfaces/IconTypeInterface";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,36 +10,8 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import styles from "./Footer.module.css";
-import { Link } from "react-router-dom";
 
-// {
-//   id: 1,
-//   iconName: "Facebook",
-//   url: "www.facebook.com",
-// },
-// {
-//   id: 2,
-//   iconName: "faInstagram",
-//   url: "www.facebook.com",
-// },
-// {
-//   id: 3,
-//   iconName: "faPinterest",
-//   url: "www.facebook.com",
-// },
-// {
-//   id: 4,
-//   iconName: "faTwitter",
-//   url: "www.facebook.com",
-// },
-// {
-//   id: 5,
-//   iconName: "faYoutube",
-//   url: "www.facebook.com",
-// },
-//];
-
-const footerIcons = [
+const footerIcons: IconTypeInterface[] = [
   {
     id: 1,
     iconName: "facebook",
@@ -56,44 +29,17 @@ const Footer = () => {
     <div className={styles.footerContainer}>
       <div className={styles.topFooterContainer}>
         <div className={styles.logoContainer}>
-          <FitnessCenterIcon className={styles.logo} />
+          <FitnessCenterIcon className={styles.logo} fontSize="large" />
         </div>
         <div className={styles.iconContainer}>
           {footerIcons.map((icon) => {
             return (
               <a href={`https://www.${icon.iconName}.com`} target="_blank">
-                <FontAwesomeIcon icon={icon.iconCode} size="lg" />
+                <FontAwesomeIcon icon={icon.iconCode} size="2x" />
               </a>
             );
           })}
         </div>
-
-        {/* <a href="http://www.facebook.com" target="_blank">
-            <span>
-              <FontAwesomeIcon icon={faFacebook} size="lg" />
-            </span>
-          </a>
-          <a href="">
-            <span>
-              <FontAwesomeIcon icon={faInstagram} size="lg" />
-            </span>
-          </a>
-          <a href="">
-            <span>
-              <FontAwesomeIcon icon={faPinterest} size="lg" />
-            </span>
-          </a>
-          <a href="">
-            <span>
-              <FontAwesomeIcon icon={faTwitter} size="lg" />
-            </span>
-          </a>
-          <a href="">
-            <span>
-              <FontAwesomeIcon icon={faYoutube} size="lg" />
-            </span>
-          </a> */}
-        {/* </div> */}
       </div>
       <div className={styles.bottomFooterContainer}>
         <div className={styles.emailInbox}>

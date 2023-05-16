@@ -29,7 +29,7 @@ const Homepage = () => {
 
   return (
     <div className={styles.homepage}>
-      <Carousel variant="dark" interval={null}>
+      <Carousel variant="dark" interval={null} indicators={null!}>
         {page.map((card) => {
           return (
             <Carousel.Item>
