@@ -16,26 +16,28 @@ const Homepage = () => {
       description:
         "Managing and creating weekly workout plans for your convenience",
       image: workoutImg,
+      link: "workouts",
     },
     {
       id: 2,
       title: "Health Content",
       description: "Managing and creating health content for you routine",
       image: healthContentImg,
+      link: "health-content",
     },
   ];
 
   return (
     <div className={styles.homepage}>
-      <Carousel variant="dark" interval={null}>
+      <Carousel variant="dark" interval={null} indicators={null!}>
         {page.map((card) => {
-          console.log(card);
           return (
             <Carousel.Item>
               <CardHome
                 title={card.title}
                 description={card.description}
                 images={card.image}
+                link={card.link}
               />
             </Carousel.Item>
           );

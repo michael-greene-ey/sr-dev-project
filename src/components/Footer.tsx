@@ -1,40 +1,44 @@
 import React from "react";
+import { IconTypeInterface } from "../interfaces/IconTypeInterface";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFacebookF,
+  faFacebook,
   faInstagram,
   faPinterest,
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-
 import styles from "./Footer.module.css";
+
+const footerIcons: IconTypeInterface[] = [
+  {
+    id: 1,
+    iconName: "facebook",
+    iconCode: faFacebook,
+  },
+  { id: 2, iconName: "Instagram", iconCode: faInstagram },
+  { id: 3, iconName: "Pinterest", iconCode: faPinterest },
+  { id: 4, iconName: "Twitter", iconCode: faTwitter },
+  { id: 5, iconName: "Youtube", iconCode: faYoutube },
+];
 
 const Footer = () => {
   let copyright = String.fromCodePoint(0x00a9);
   return (
-    <div>
+    <div className={styles.footerContainer}>
       <div className={styles.topFooterContainer}>
         <div className={styles.logoContainer}>
-          <FitnessCenterIcon className={styles.logo} />
+          <FitnessCenterIcon className={styles.logo} fontSize="large" />
         </div>
         <div className={styles.iconContainer}>
-          <span>
-            <FontAwesomeIcon icon={faFacebookF} size="lg" />
-          </span>
-          <span>
-            <FontAwesomeIcon icon={faInstagram} size="lg" />
-          </span>
-          <span>
-            <FontAwesomeIcon icon={faPinterest} size="lg" />
-          </span>
-          <span>
-            <FontAwesomeIcon icon={faTwitter} size="lg" />
-          </span>
-          <span>
-            <FontAwesomeIcon icon={faYoutube} size="lg" />
-          </span>
+          {footerIcons.map((icon) => {
+            return (
+              <a href={`https://www.${icon.iconName}.com`} target="_blank">
+                <FontAwesomeIcon icon={icon.iconCode} size="2x" />
+              </a>
+            );
+          })}
         </div>
       </div>
       <div className={styles.bottomFooterContainer}>

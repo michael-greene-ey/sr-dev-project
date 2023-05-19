@@ -2,12 +2,8 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import styles from "./CardHome.module.css";
-
-interface CardHomeInterface {
-  title: string;
-  description: string;
-  images: string;
-}
+import { CardHomeInterface } from "../interfaces/CardHomeInterface";
+import { Link } from "react-router-dom";
 
 const CardHome = (props: CardHomeInterface) => {
   return (
@@ -20,7 +16,9 @@ const CardHome = (props: CardHomeInterface) => {
         <Card.Body>
           <Card.Title>{props.title}</Card.Title>
           <Card.Text>{props.description}</Card.Text>
-          <Button variant="primary">Go To</Button>
+          <Link to={`${props.link}`}>
+            <Button variant="primary">Go To</Button>
+          </Link>
         </Card.Body>
       </Card>
     </div>

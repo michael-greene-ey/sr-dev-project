@@ -92,6 +92,10 @@
   margin-top: 20px;
 }
 
+.footerContainer {
+  margin-top: auto;
+}
+
 .emailInboxText {
   font-size: large;
   font-weight: bolder;
@@ -99,9 +103,8 @@
 }
 
 .logo {
-  font-size: 45px;
   margin-top: 2px;
-  color: white;
+  color: blue;
 }
 
 .iconContainer {
