@@ -2,4 +2,9 @@
   background-image: url("../assests/images/health-content.jpg");
   background-size: cover;
   min-height: 62vh;
+  /* display: flex; */
+}
+
+.carouselItem {
+  justify-content: -10px;
 }

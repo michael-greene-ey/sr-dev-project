@@ -10,9 +10,9 @@ const CardPage = (props: CardHomeInterface) => {
     <div className={styles.card}>
       <Card
         className="bg-dark text-white"
-        style={{ width: "15vw", height: "em" }}
+        style={{ width: "12vw", height: "23em" }}
       >
-        <Card.Img variant="top" style={{ height: "80%" }} src={props.images} />
+        <Card.Img variant="top" style={{ height: "50%" }} src={props.images} />
         <Card.Body>
           <Card.Title>{props.title}</Card.Title>
           <Card.Text>{props.description}</Card.Text>

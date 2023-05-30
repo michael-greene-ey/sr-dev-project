@@ -79,7 +79,6 @@ const HealthContent = () => {
       images: workoutImg,
       link: "workouts",
     },
-
     {
       id: 9,
       title: "9",
@@ -99,6 +98,7 @@ const HealthContent = () => {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 4,
+      slidesToSlide: 4,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -112,16 +112,19 @@ const HealthContent = () => {
 
   return (
     <div className={styles.healthContent}>
-      <Carousel responsive={responsive}>
+      <h1>Health Articles</h1>
+      <Carousel responsive={responsive} itemClass={styles.carouselItem}>
         {cards.map((card) => {
           return (
-            <CardPage
-              key={card.id}
-              title={card.title}
-              description={card.description}
-              link={card.link}
-              images={card.images}
-            ></CardPage>
+            <>
+              <CardPage
+                key={card.id}
+                title={card.title}
+                description={card.description}
+                link={card.link}
+                images={card.images}
+              ></CardPage>
+            </>
           );
         })}
       </Carousel>
