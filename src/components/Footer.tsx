@@ -35,7 +35,11 @@ const Footer = () => {
           {footerIcons.map((icon) => {
             return (
               <a href={`https://www.${icon.iconName}.com`} target="_blank">
-                <FontAwesomeIcon icon={icon.iconCode} size="2x" />
+                <FontAwesomeIcon
+                  className={styles.icon}
+                  icon={icon.iconCode}
+                  size="2x"
+                />
               </a>
             );
           })}

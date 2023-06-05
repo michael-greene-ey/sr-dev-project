@@ -3,7 +3,7 @@
   height: 250px;
   display: flex;
   flex-direction: row;
-  padding-top: 3%;
+  padding: 3% 11% 0 11%;
 }
 
 .bottomFooterLegal {
@@ -93,18 +93,20 @@
 }
 
 .emailInboxText {
-  font-size: large;
-  font-weight: bolder;
-  font-style: italic;
-}
-
-.footerContainer {
-  margin-top: auto;
+  font: italic;
+  /* font-size: large; */
+  /* font-weight: bolder; */
+  /* font-style: italic; */
 }
 
 .logo {
   margin-top: 2px;
-  color: blue;
+  margin-left: -40px;
+  color: white;
+}
+
+.icon {
+  color: white;
 }
 
 .iconContainer {
@@ -121,10 +123,10 @@
 }
 
 .topFooterContainer {
-  background-color: black;
+  background-color: rgb(0, 62, 82);
   display: flex;
   justify-content: space-between;
-  padding: 0.5%;
+  padding: 1em 5.5em;
 }
 
 .hr {

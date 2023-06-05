@@ -1,6 +1,18 @@
-.card {
+.button {
+  background-color: rgb(243, 195, 0);
+  color: rgb(0, 62, 82);
+  border: none;
+}
+
+.cardContainer .carding {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(41, 143, 168);
+  color: white;
+}
+
+.cardContainer {
+  display: flex;
   justify-content: space-around;
 }
