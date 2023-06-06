@@ -1,21 +1,23 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import styles from "./CardHome.module.css";
 import { CardHomeInterface } from "../interfaces/CardHomeInterface";
 import { Link } from "react-router-dom";
+import styles from "./CardHome.module.css";
 
 const CardHome = (props: CardHomeInterface) => {
   return (
     <div className={styles.cardContainer}>
       <Card
         className={styles.carding}
-        style={{ width: "50vw", height: "50em" }}
+        style={{ width: "1000px", height: "800px" }}
       >
-        <Card.Img variant="top" style={{ height: "80%" }} src={props.images} />
+        <Card.Img variant="top" style={{}} src={props.images} />
         <Card.Body>
-          <Card.Title>{props.title}</Card.Title>
-          <Card.Text>{props.description}</Card.Text>
+          <Card.Title className={styles.title}>{props.title}</Card.Title>
+          <Card.Text className={styles.description}>
+            {props.description}
+          </Card.Text>
           <Link to={`${props.link}`}>
             <Button className={styles.button}>Go To</Button>
           </Link>

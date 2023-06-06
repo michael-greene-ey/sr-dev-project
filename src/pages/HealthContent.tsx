@@ -1,11 +1,10 @@
 import React from "react";
 // @ts-ignore
 import workoutImg from "../assests/images/workout.jpg";
-import styles from "./HealthContent.module.css";
-import CardPage from "../UI/CardPage";
-import Carousel from "react-multi-carousel";
+
 import "react-multi-carousel/lib/styles.css";
 import SingleCarousel from "../UI/SingleCarousel";
+import styles from "./HealthContent.module.css";
 
 const HealthContent = () => {
   const cards = [

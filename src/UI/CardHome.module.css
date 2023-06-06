@@ -1,4 +1,4 @@
-.button {
+.cardContainer .button {
   background-color: rgb(243, 195, 0);
   color: rgb(0, 62, 82);
   border: none;
@@ -7,9 +7,9 @@
 .cardContainer .carding {
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: rgb(41, 143, 168);
   color: white;
+  padding-bottom: 1%;
 }
 
 .cardContainer {
@@ -17,4 +17,16 @@
   justify-content: center;
   align-items: center;
   margin: 30px 0;
+}
+
+/* .cardImg {
+  transform: scale(0.95);
+} */
+
+.title {
+  font-size: 30px;
+}
+
+.description {
+  font-size: 20px;
 }

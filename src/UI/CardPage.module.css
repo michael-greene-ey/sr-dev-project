@@ -1,4 +1,4 @@
-.button {
+.cardContainer .button {
   background-color: rgb(243, 195, 0);
   color: rgb(0, 62, 82);
   border: none;
@@ -15,4 +15,12 @@
 .cardContainer {
   display: flex;
   justify-content: space-around;
+}
+
+.title {
+  size: 10px !important;
+}
+
+.description {
+  font-size: 20px !important;
 }

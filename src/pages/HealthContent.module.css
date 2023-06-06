@@ -2,7 +2,8 @@
   background-image: url("../assests/images/healthcare.png");
   background-size: cover;
   min-height: 62vh;
-  /* display: flex; */
+  padding-top: 2%;
+  padding-bottom: 1%;
 }
 
 .carouselItem {
