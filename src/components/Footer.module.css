@@ -93,10 +93,11 @@
 }
 
 .emailInboxText {
-  font: italic;
-  /* font-size: large; */
-  /* font-weight: bolder; */
-  /* font-style: italic; */
+  font-size: larger;
+}
+
+.footerContainer {
+  margin-top: auto;
 }
 
 .logo {
