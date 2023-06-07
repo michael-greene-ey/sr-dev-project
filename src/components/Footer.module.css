@@ -92,14 +92,14 @@
   margin-top: 20px;
 }
 
-.footerContainer {
-  margin-top: auto;
-}
-
 .emailInboxText {
   font-size: large;
   font-weight: bolder;
   font-style: italic;
+}
+
+.footerContainer {
+  margin-top: auto;
 }
 
 .logo {

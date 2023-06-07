@@ -1,4 +1,5 @@
 .homepage {
   background-image: url("../assests/images/homepage-background.jpeg");
   background-size: cover;
+  min-height: 62vh;
 }
