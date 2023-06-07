@@ -3,7 +3,7 @@ import React from "react";
 import workoutImg from "../assests/images/workout.jpg";
 
 import "react-multi-carousel/lib/styles.css";
-import SingleCarousel from "../UI/SingleCarousel";
+import SingleCarousel from "../components/SingleCarousel";
 import styles from "./HealthContent.module.css";
 
 const HealthContent = () => {

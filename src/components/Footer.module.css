@@ -2,7 +2,6 @@
   background-color: lightgray;
   height: 250px;
   display: flex;
-  flex-direction: row;
   padding: 3% 11% 0 11%;
 }
 
@@ -55,7 +54,6 @@
 
 .emailBox {
   display: flex;
-  flex-direction: row;
 }
 
 .emailBox input {
@@ -93,7 +91,7 @@
 }
 
 .emailInboxText {
-  font-size: larger;
+  font-size: 18px;
 }
 
 .footerContainer {

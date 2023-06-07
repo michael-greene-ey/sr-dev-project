@@ -1,6 +1,6 @@
 import React from "react";
 // @ts-ignore
-import CardPage from "../UI/CardPage";
+import CardPage from "./CardPage";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { SingleCarouselInterface } from "../interfaces/SingleCarouselInterface";
@@ -9,7 +9,6 @@ import styles from "./SingleCarousel.module.css";
 const SingleCarousel = (props: SingleCarouselInterface) => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
     },

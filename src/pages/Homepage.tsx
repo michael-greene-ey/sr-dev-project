@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import CardHome from "../UI/CardHome";
+import CardHome from "../components/CardHome";
 // @ts-ignore
 import workoutImg from "../assests/images/workout.jpg";
 //@ts-ignore
