@@ -2,8 +2,7 @@
   background-color: lightgray;
   height: 250px;
   display: flex;
-  flex-direction: row;
-  padding-top: 3%;
+  padding: 50px 225px 0;
 }
 
 .bottomFooterLegal {
@@ -12,7 +11,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80%;
+  height: 165px;
 }
 
 .bottomFooterLegal a {
@@ -27,7 +26,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80%;
+  height: 160px;
 }
 
 .bottomFooterLinks a {
@@ -55,7 +54,6 @@
 
 .emailBox {
   display: flex;
-  flex-direction: row;
 }
 
 .emailBox input {
@@ -71,7 +69,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 1%;
+  margin-top: 20px;
 }
 
 .emailInbox input {
@@ -93,9 +91,7 @@
 }
 
 .emailInboxText {
-  font-size: large;
-  font-weight: bolder;
-  font-style: italic;
+  font-size: 18px;
 }
 
 .footerContainer {
@@ -104,7 +100,12 @@
 
 .logo {
   margin-top: 2px;
-  color: blue;
+  margin-left: -40px;
+  color: white;
+}
+
+.icon {
+  color: white;
 }
 
 .iconContainer {
@@ -112,7 +113,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 20%;
+  width: 300px;
 }
 
 .iconContainer > span {
@@ -121,10 +122,10 @@
 }
 
 .topFooterContainer {
-  background-color: black;
+  background-color: rgb(0, 62, 82);
   display: flex;
   justify-content: space-between;
-  padding: 0.5%;
+  padding: 15px 105px;
 }
 
 .hr {

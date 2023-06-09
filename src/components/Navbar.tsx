@@ -9,7 +9,7 @@ const Navbar = () => {
     <div className={styles.navbar}>
       <div className={styles.logoAndName}>
         <span className={styles.logoContainer}>
-          <FitnessCenterIcon className={styles.logo} fontSize="large" />
+          <FitnessCenterIcon className={styles.logo} fontSize="inherit" />
         </span>
         <span className={styles.coName}>Health & Fitness</span>
       </div>
