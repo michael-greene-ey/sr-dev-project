@@ -33,15 +33,13 @@ const SingleCarousel = (props: SingleCarouselInterface) => {
       <Carousel responsive={responsive} className={styles.carouselContainer}>
         {props.data.map((card) => {
           return (
-            <>
-              <CardPage
-                key={card.id}
-                title={card.title}
-                description={card.description}
-                link={card.link}
-                images={card.images}
-              ></CardPage>
-            </>
+            <CardPage
+              key={card.id}
+              title={card.title}
+              description={card.description}
+              link={card.link}
+              images={card.images}
+            ></CardPage>
           );
         })}
       </Carousel>

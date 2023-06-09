@@ -2,7 +2,7 @@
 
 .logo {
   margin-top: 2px;
-  margin-left: -35px;
+  margin-left: -20px;
 }
 
 .logoAndName {
@@ -43,7 +43,7 @@
 .searchNavInput {
   display: flex;
   justify-content: end;
-  margin-right: 2.5em;
+  margin-right: 75px;
 }
 
 .searchNavInput input {

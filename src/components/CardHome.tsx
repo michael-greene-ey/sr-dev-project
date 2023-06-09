@@ -8,10 +8,7 @@ import styles from "./CardHome.module.css";
 const CardHome = (props: CardHomeInterface) => {
   return (
     <div className={styles.cardContainer}>
-      <Card
-        className={styles.carding}
-        style={{ width: "1000px", height: "800px" }}
-      >
+      <Card className={styles.carding}>
         <Card.Img className={styles.cardImg} variant="top" src={props.images} />
         <Card.Body>
           <Card.Title className={styles.title}>{props.title}</Card.Title>
