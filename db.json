@@ -1,0 +1,90 @@
+{
+  "homepage": [
+    {
+      "id": 1,
+      "title": "Workout Plans",
+      "description": "Managing and creating weekly workout plans for your convenience",
+      "images": "http://localhost:3001/static/media/workout.2867fe5374730b3dc553.jpg",
+      "link": "workouts"
+    },
+    {
+      "id": 2,
+      "title": "Health Content",
+      "description": "Managing and creating health content for you routine",
+      "images": "http://localhost:3001/static/media/healthcare.59a604a292755a6a653b.png",
+      "link": "health-content"
+    }
+  ],
+  "health-content": [
+    {
+      "id": 1,
+      "title": "Staying Healthy",
+      "description": "Staying health happens on purpose",
+      "images": "https://www.alzsd.org/wp-content/uploads/2020/03/health-wellness.png",
+      "link": "https://www.health.harvard.edu/topics/staying-healthy"
+    },
+
+    {
+      "id": 2,
+      "title": "2",
+      "description": "",
+      "images": "http://localhost:3001/static/media/healthcare.59a604a292755a6a653b.png",
+      "link": "workouts"
+    },
+
+    {
+      "id": 3,
+      "title": "3",
+      "description": "Managing and creating weekly workout plans for your convenience",
+      "images": "http://localhost:3001/static/media/healthcare.59a604a292755a6a653b.png",
+      "link": "workouts"
+    },
+
+    {
+      "id": 4,
+      "title": "4",
+      "description": "Managing and creating weekly workout plans for your convenience",
+      "images": "http://localhost:3001/static/media/healthcare.59a604a292755a6a653b.png",
+      "link": "workouts"
+    },
+
+    {
+      "id": 5,
+      "title": "5",
+      "description": "Managing and creating weekly workout plans for your convenience",
+      "images": "http://localhost:3001/static/media/healthcare.59a604a292755a6a653b.png",
+      "link": "workouts"
+    },
+
+    {
+      "id": 6,
+      "title": "6",
+      "description": "Managing and creating weekly workout plans for your convenience",
+      "images": "http://localhost:3001/static/media/healthcare.59a604a292755a6a653b.png",
+      "link": "workouts"
+    },
+
+    {
+      "id": 7,
+      "title": "7",
+      "description": "Managing and creating weekly workout plans for your convenience",
+      "images": "http://localhost:3001/static/media/healthcare.59a604a292755a6a653b.png",
+      "link": "workouts"
+    },
+
+    {
+      "id": 8,
+      "title": "8",
+      "description": "Managing and creating weekly workout plans for your convenience",
+      "images": "http://localhost:3001/static/media/healthcare.59a604a292755a6a653b.png",
+      "link": "workouts"
+    },
+    {
+      "id": 9,
+      "title": "9",
+      "description": "Managing and creating weekly workout plans for your convenience",
+      "images": "http://localhost:3001/static/media/healthcare.59a604a292755a6a653b.png",
+      "link": "workouts"
+    }
+  ]
+}

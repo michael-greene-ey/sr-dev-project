@@ -5,11 +5,10 @@
 }
 
 .cardContainer .carding {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: rgb(41, 143, 168);
   color: white;
+  width: 250px;
+  height: 400px;
 }
 
 .cardContainer {
@@ -17,10 +16,10 @@
   justify-content: space-around;
 }
 
-.title {
-  size: 10px;
+.titled {
+  font-size: 25px;
 }
 
 .description {
-  font-size: 20px;
+  font-size: 18px;
 }

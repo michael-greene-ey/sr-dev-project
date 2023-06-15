@@ -8,13 +8,10 @@ import { Link } from "react-router-dom";
 const CardPage = (props: CardHomeInterface) => {
   return (
     <div className={styles.cardContainer}>
-      <Card
-        className={styles.carding}
-        style={{ width: "250px", height: "400px" }}
-      >
+      <Card className={styles.carding}>
         <Card.Img variant="top" style={{ height: "50%" }} src={props.images} />
         <Card.Body>
-          <Card.Title className={styles.title}>{props.title}</Card.Title>
+          <Card.Title className={styles.titled}>{props.title}</Card.Title>
           <Card.Text className={styles.description}>
             {props.description}
           </Card.Text>

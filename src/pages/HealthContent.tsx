@@ -1,110 +1,39 @@
-import React from "react";
-// @ts-ignore
-import workoutImg from "../assests/images/workout.jpg";
+import React, { useState, useEffect } from "react";
 
 import "react-multi-carousel/lib/styles.css";
 import SingleCarousel from "../components/SingleCarousel";
+import { CardHomeInterface as CardInterface } from "../interfaces/CardHomeInterface";
 import styles from "./HealthContent.module.css";
 
 const HealthContent = () => {
-  const cards = [
-    {
-      id: 1,
-      title: "1",
-      description:
-        "Managing and creating weekly workout plans for your convenience",
-      images: workoutImg,
-      link: "workouts",
-    },
+  const [pageCards, setPageCards] = useState<CardInterface[]>();
 
-    {
-      id: 2,
-      title: "2",
-      description:
-        "Managing and creating weekly workout plans for your convenience",
-      images: workoutImg,
-      link: "workouts",
-    },
+  useEffect(() => {
+    fetchData();
+  }, []);
 
-    {
-      id: 3,
-      title: "3",
-      description:
-        "Managing and creating weekly workout plans for your convenience",
-      images: workoutImg,
-      link: "workouts",
-    },
-
-    {
-      id: 4,
-      title: "4",
-      description:
-        "Managing and creating weekly workout plans for your convenience",
-      images: workoutImg,
-      link: "workouts",
-    },
-
-    {
-      id: 5,
-      title: "5",
-      description:
-        "Managing and creating weekly workout plans for your convenience",
-      images: workoutImg,
-      link: "workouts",
-    },
-
-    {
-      id: 6,
-      title: "6",
-      description:
-        "Managing and creating weekly workout plans for your convenience",
-      images: workoutImg,
-      link: "workouts",
-    },
-
-    {
-      id: 7,
-      title: "7",
-      description:
-        "Managing and creating weekly workout plans for your convenience",
-      images: workoutImg,
-      link: "workouts",
-    },
-
-    {
-      id: 8,
-      title: "8",
-      description:
-        "Managing and creating weekly workout plans for your convenience",
-      images: workoutImg,
-      link: "workouts",
-    },
-    {
-      id: 9,
-      title: "9",
-      description:
-        "Managing and creating weekly workout plans for your convenience",
-      images: workoutImg,
-      link: "workouts",
-    },
-  ];
+  const fetchData = async function () {
+    const res = await fetch("http://localhost:3000/health-content");
+    const data = await res.json();
+    setPageCards([...data]);
+  };
 
   return (
     <div className={styles.healthContent}>
       <SingleCarousel
         class={styles.title}
-        title="Health News"
-        data={cards}
+        title="Health Articles"
+        data={pageCards || []}
       ></SingleCarousel>
       <SingleCarousel
         class={styles.title}
         title="Health Tips"
-        data={cards}
+        data={pageCards || []}
       ></SingleCarousel>
       <SingleCarousel
         class={styles.title}
-        title="Health Articles"
-        data={cards}
+        title="Health News"
+        data={pageCards || []}
       ></SingleCarousel>
     </div>
   );
