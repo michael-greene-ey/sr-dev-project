@@ -1,14 +1,32 @@
+.bottom {
+  position: absolute;
+  bottom: 10px;
+  left: 100px;
+}
+
+.cardImp {
+  margin: ;
+}
+
 .cardContainer .button {
   background-color: rgb(243, 195, 0);
   color: rgb(0, 62, 82);
   border: none;
+  text-decoration: none;
 }
 
 .cardContainer .carding {
   background-color: rgb(41, 143, 168);
   color: white;
   width: 250px;
-  height: 400px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardContainer .cardbottom {
+  display: flex;
 }
 
 .cardContainer {
@@ -16,10 +34,12 @@
   justify-content: space-around;
 }
 
-.titled {
+.title {
   font-size: 25px;
+  flex: 1;
 }
 
 .description {
   font-size: 18px;
+  padding-bottom: 5px;
 }

@@ -25,9 +25,6 @@ const Homepage = () => {
     <div className={styles.homepage}>
       <Carousel variant="dark" interval={null} indicators={null!}>
         {homeCards?.map((card) => {
-          {
-            console.log(card.images);
-          }
           return (
             <Carousel.Item>
               <CardHome

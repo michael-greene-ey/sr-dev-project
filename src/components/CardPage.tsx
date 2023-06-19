@@ -11,11 +11,11 @@ const CardPage = (props: CardHomeInterface) => {
       <Card className={styles.carding}>
         <Card.Img variant="top" style={{ height: "50%" }} src={props.images} />
         <Card.Body>
-          <Card.Title className={styles.titled}>{props.title}</Card.Title>
+          <Card.Title className={styles.title}>{props.title}</Card.Title>
           <Card.Text className={styles.description}>
             {props.description}
           </Card.Text>
-          <Link to={props.link}>
+          <Link to={props.link} className={styles.bottom}>
             <Button className={styles.button}>Go To</Button>
           </Link>
         </Card.Body>
