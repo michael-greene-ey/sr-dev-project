@@ -34,7 +34,11 @@ const Footer = () => {
         <div className={styles.iconContainer}>
           {footerIcons.map((icon) => {
             return (
-              <a href={`https://www.${icon.iconName}.com`} target="_blank">
+              <a
+                href={`https://www.${icon.iconName}.com`}
+                target="_blank"
+                key={icon.id}
+              >
                 <FontAwesomeIcon
                   className={styles.icon}
                   icon={icon.iconCode}

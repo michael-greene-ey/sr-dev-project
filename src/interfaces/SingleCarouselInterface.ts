@@ -1,8 +1,8 @@
-import { CardHomeInterface as CardInterface } from "./CardHomeInterface";
+import { CardHomeInterface } from "./CardHomeInterface";
 
 interface SingleCarouselInterface {
   title: string;
-  data: CardInterface[];
+  data: CardHomeInterface[];
   class?: string;
 }
 
