@@ -39,3 +39,9 @@
   font-size: 18px;
   padding-bottom: 5px;
 }
+
+@media screen and (max-width: 480px) {
+  .carding {
+    margin: 2em;
+  }
+}

@@ -61,14 +61,11 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.bottomFooterLinks}>
-          <span>
-            <a>Need Help?</a>
-
-            <a href="#">Help Center</a>
-            <a href="#">Email Support</a>
-            <a href="#">Live Chat</a>
-            <a href="#">FAQs</a>
-          </span>
+          <a>Need Help?</a>
+          <a href="#">Help Center</a>
+          <a href="#">Email Support</a>
+          <a href="#">Live Chat</a>
+          <a href="#">FAQs</a>
         </div>
         <div className={styles.bottomFooterLegal}>
           <a href="#">Careers</a>

@@ -32,3 +32,15 @@
 .description {
   font-size: 20px;
 }
+
+@media screen and (max-width: 760px) {
+  .cardImg {
+    width: 100%;
+    height: auto;
+  }
+
+  .cardContainer .carding {
+    max-width: 90%;
+    height: auto;
+  }
+}

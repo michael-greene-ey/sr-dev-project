@@ -2,7 +2,20 @@
   padding: 35px 0;
 }
 
+.class {
+  display: flex;
+}
+
+.spaceContainer {
+  display: flex;
+}
+
+.space {
+  flex: 2;
+}
+
 .title {
   color: white;
-  margin-left: 135px;
+  margin: 0 6.5%;
+  flex: 1;
 }

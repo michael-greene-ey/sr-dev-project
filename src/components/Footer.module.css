@@ -2,31 +2,32 @@
   background-color: lightgray;
   height: 250px;
   display: flex;
-  padding: 50px 225px 0;
+  padding: 0 12%;
 }
 
 .bottomFooterLegal {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 165px;
+  justify-content: space-evenly;
 }
 
 .bottomFooterLegal a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: black;
-  flex: 1;
 }
 
 .bottomFooterLinks {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 160px;
+  justify-content: space-evenly;
 }
 
 .bottomFooterLinks a {
@@ -38,22 +39,14 @@
   color: black;
 }
 
-.bottomFooterLinks span {
-  text-decoration: none;
-  color: black;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
 .copyright {
   background-color: lightgray;
   padding: 5px;
 }
 
 .emailBox {
-  display: flex;
+  /* display: flex; */
+  /* flex: 1; */
 }
 
 .emailBox input {
@@ -62,6 +55,8 @@
   height: 25px;
   outline: none;
   width: 250px;
+  justify-content: center;
+  /* display: flex; */
 }
 
 .emailInbox {
@@ -69,15 +64,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  justify-content: center;
 }
 
 .emailInbox input {
   align-items: center;
   border-style: none;
-  height: 25px;
+  height: 25.5px;
   outline: none;
-  width: 250px;
+  /* width: 250px; */
+  flex: 1;
   border-radius: 2px;
   margin-top: 20px;
 }
@@ -99,9 +95,11 @@
 }
 
 .logo {
-  margin-top: 2px;
-  margin-left: -40px;
   color: white;
+}
+
+.logoContainer {
+  flex: 7.75;
 }
 
 .icon {
@@ -113,22 +111,48 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 300px;
+  flex: 2;
 }
 
-.iconContainer > span {
+.iconContainer a {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .topFooterContainer {
   background-color: rgb(0, 62, 82);
   display: flex;
   justify-content: space-between;
-  padding: 15px 105px;
+  padding: 15px 2%;
 }
 
 .hr {
   margin: 0;
   padding: 0;
+}
+
+@media screen and (max-width: 760px) {
+  .bottomFooterContainer {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .bottomFooterLinks,
+  .bottomFooterLegal {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+  }
+
+  .emailInbox {
+    margin: 1em 0;
+  }
+
+  .logoContainer {
+    flex: 2;
+  }
+
+  .iconContainer {
+    flex: 2;
+  }
 }
