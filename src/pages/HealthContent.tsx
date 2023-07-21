@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-
 import "react-multi-carousel/lib/styles.css";
+import { HEALTH_CONTENT } from "../assests/Constants";
 import SingleCarousel from "../components/SingleCarousel";
 import { CardHomeInterface as CardInterface } from "../interfaces/CardHomeInterface";
 import styles from "./HealthContent.module.css";
@@ -14,18 +14,17 @@ const HealthContent = () => {
 
   const fetchData = async function () {
     try {
-      const res = await fetch("http://localhost:3000/health-content");
-
-      let error;
+      const res = await fetch(HEALTH_CONTENT);
 
       if (!res.ok) {
         throw new Error(`HTTP error! Status: ${res.status}`);
-        error = res.status;
       }
       const data = await res.json();
       setPageCards([...data]);
-    } catch (error: any) {
-      console.log("An error occurred:", error.message);
+    } catch (error) {
+      error instanceof Error
+        ? console.log("An error occurred:", error.message)
+        : console.log("Unknown Failure", error);
     }
   };
 

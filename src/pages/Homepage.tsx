@@ -3,6 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 import CardHome from "../components/CardHome";
 import styles from "./Homepage.module.css";
 import { CardHomeInterface } from "../interfaces/CardHomeInterface";
+import { HOMEPAGE } from "../assests/Constants";
 
 const Homepage = () => {
   const [homeCards, setHomeCards] = useState<CardHomeInterface[]>();
@@ -13,19 +14,18 @@ const Homepage = () => {
 
   const fetchData = async function () {
     try {
-      const res = await fetch("http://localhost:3000/homepage");
-
-      let error;
+      const res = await fetch(HOMEPAGE);
 
       if (!res.ok) {
         throw new Error(`HTTP error! Status: ${res.status}`);
-        error = res.status;
       }
 
       const data = await res.json();
       setHomeCards(data);
-    } catch (error: any) {
-      console.log("An error occurred:", error.message);
+    } catch (error) {
+      error instanceof Error
+        ? console.log("An error occurred:", error.message)
+        : console.log("Unknown Failure", error);
     }
   };
 

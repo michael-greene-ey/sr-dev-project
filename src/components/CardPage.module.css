@@ -15,7 +15,7 @@
   background-color: rgb(41, 143, 168);
   color: white;
   width: 250px;
-  height: 450px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,7 +27,7 @@
 
 .cardContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .title {
@@ -40,8 +40,8 @@
   padding-bottom: 5px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 541px) {
   .carding {
-    margin: 2em;
+    justify-content: 3em;
   }
 }
