@@ -10,17 +10,20 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import styles from "./Footer.module.css";
+import {
+  FACEBOOK,
+  INSTAGRAM,
+  PINTEREST,
+  TWITTER,
+  YOUTUBE,
+} from "../assests/Constants";
 
 const footerIcons: IconTypeInterface[] = [
-  {
-    id: 1,
-    iconName: "facebook",
-    iconCode: faFacebook,
-  },
-  { id: 2, iconName: "Instagram", iconCode: faInstagram },
-  { id: 3, iconName: "Pinterest", iconCode: faPinterest },
-  { id: 4, iconName: "Twitter", iconCode: faTwitter },
-  { id: 5, iconName: "Youtube", iconCode: faYoutube },
+  { id: 1, website: FACEBOOK, iconCode: faFacebook },
+  { id: 2, website: INSTAGRAM, iconCode: faInstagram },
+  { id: 3, website: PINTEREST, iconCode: faPinterest },
+  { id: 4, website: TWITTER, iconCode: faTwitter },
+  { id: 5, website: YOUTUBE, iconCode: faYoutube },
 ];
 
 const Footer = () => {
@@ -34,7 +37,12 @@ const Footer = () => {
         <div className={styles.iconContainer}>
           {footerIcons.map((icon) => {
             return (
-              <a href={`https://www.${icon.iconName}.com`} target="_blank">
+              <a
+                href={icon.website}
+                target="_blank"
+                key={icon.id}
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon
                   className={styles.icon}
                   icon={icon.iconCode}
@@ -57,14 +65,11 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.bottomFooterLinks}>
-          <span>
-            <a>Need Help?</a>
-
-            <a href="#">Help Center</a>
-            <a href="#">Email Support</a>
-            <a href="#">Live Chat</a>
-            <a href="#">FAQs</a>
-          </span>
+          <a>Need Help?</a>
+          <a href="#">Help Center</a>
+          <a href="#">Email Support</a>
+          <a href="#">Live Chat</a>
+          <a href="#">FAQs</a>
         </div>
         <div className={styles.bottomFooterLegal}>
           <a href="#">Careers</a>

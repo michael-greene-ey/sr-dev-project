@@ -2,7 +2,7 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 interface IconTypeInterface {
   id: number;
-  iconName: string;
+  website: string;
   iconCode: IconProp;
 }
 

@@ -2,7 +2,21 @@
   padding: 35px 0;
 }
 
+.flex {
+  display: flex;
+}
+
+.spaceContainer {
+  display: flex;
+}
+
 .title {
   color: white;
-  margin-left: 135px;
+  margin: 0 6.5%;
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    margin: 0 1.5em;
+  }
 }

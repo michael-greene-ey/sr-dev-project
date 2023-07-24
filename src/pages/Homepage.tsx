@@ -1,42 +1,44 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import CardHome from "../components/CardHome";
-// @ts-ignore
-import workoutImg from "../assests/images/workout.jpg";
-//@ts-ignore
-import healthContentImg from "../assests/images/health-content.jpg";
 import styles from "./Homepage.module.css";
+import { CardHomeInterface } from "../interfaces/CardHomeInterface";
+import { HOMEPAGE } from "../assests/Constants";
 
 const Homepage = () => {
-  //temp data
-  const page = [
-    {
-      id: 1,
-      title: "Workout Plans",
-      description:
-        "Managing and creating weekly workout plans for your convenience",
-      image: workoutImg,
-      link: "workouts",
-    },
-    {
-      id: 2,
-      title: "Health Content",
-      description: "Managing and creating health content for you routine",
-      image: healthContentImg,
-      link: "health-content",
-    },
-  ];
+  const [homeCards, setHomeCards] = useState<CardHomeInterface[]>();
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async function () {
+    try {
+      const res = await fetch(HOMEPAGE);
+
+      if (!res.ok) {
+        throw new Error(`HTTP error! Status: ${res.status}`);
+      }
+
+      const data = await res.json();
+      setHomeCards(data);
+    } catch (error) {
+      error instanceof Error
+        ? console.log("An error occurred:", error.message)
+        : console.log("Unknown Failure", error);
+    }
+  };
 
   return (
     <div className={styles.homepage}>
       <Carousel variant="dark" interval={null} indicators={null!}>
-        {page.map((card) => {
+        {homeCards?.map((card) => {
           return (
-            <Carousel.Item>
+            <Carousel.Item key={card.id}>
               <CardHome
                 title={card.title}
                 description={card.description}
-                images={card.image}
+                images={card.images}
                 link={card.link}
               />
             </Carousel.Item>

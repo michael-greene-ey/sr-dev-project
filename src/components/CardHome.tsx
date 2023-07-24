@@ -10,7 +10,8 @@ const CardHome = (props: CardHomeInterface) => {
     <div className={styles.cardContainer}>
       <Card className={styles.carding}>
         <Card.Img className={styles.cardImg} variant="top" src={props.images} />
-        <Card.Body>
+
+        <Card.Body className={styles.cardBody}>
           <Card.Title className={styles.title}>{props.title}</Card.Title>
           <Card.Text className={styles.description}>
             {props.description}
