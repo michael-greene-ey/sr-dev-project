@@ -3,7 +3,7 @@ import { CardHomeInterface } from "./CardHomeInterface";
 interface SingleCarouselInterface {
   title: string;
   data: CardHomeInterface[];
-  class?: string;
+  cardName?: string;
 }
 
 export { SingleCarouselInterface };

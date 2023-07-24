@@ -1,5 +1,4 @@
 import React from "react";
-// @ts-ignore
 import CardPage from "./CardPage";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -28,11 +27,11 @@ const SingleCarousel = (props: SingleCarouselInterface) => {
   };
 
   return (
-    <div className={props.class}>
-      <div className={styles.spaceContainer}>
-        <h1 className={styles.title}>{props.title}</h1>
-        <div className={styles.space}></div>
-      </div>
+    <div className={props.cardName}>
+      {/* <div className={styles.spaceContainer}> */}
+      <h1 className={styles.title}>{props.title}</h1>
+      {/* <div className={styles.space}></div> */}
+      {/* </div> */}
       <Carousel responsive={responsive} className={styles.carouselContainer}>
         {props.data.map((card) => {
           return (

@@ -31,17 +31,17 @@ const HealthContent = () => {
   return (
     <div className={styles.healthContent}>
       <SingleCarousel
-        class={styles.title}
+        cardName={styles.title}
         title="Health Articles"
         data={pageCards || []}
       ></SingleCarousel>
       <SingleCarousel
-        class={styles.title}
+        cardName={styles.title}
         title="Health Tips"
         data={pageCards || []}
       ></SingleCarousel>
       <SingleCarousel
-        class={styles.title}
+        cardName={styles.title}
         title="Health News"
         data={pageCards || []}
       ></SingleCarousel>

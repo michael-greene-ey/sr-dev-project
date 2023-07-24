@@ -2,7 +2,7 @@
   padding: 35px 0;
 }
 
-.class {
+.flex {
   display: flex;
 }
 
@@ -10,12 +10,13 @@
   display: flex;
 }
 
-.space {
-  flex: 2;
-}
-
 .title {
   color: white;
   margin: 0 6.5%;
-  flex: 1;
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    margin: 0 1.5em;
+  }
 }
