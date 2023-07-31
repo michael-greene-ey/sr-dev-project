@@ -86,5 +86,49 @@
       "images": "https://mexicobariatriccenter.com/wp-content/uploads/2016/11/8-Causes-of-Obesity-Mexico-Bariatric-Center.png",
       "link": "https://www.webmd.com/obesity/news/20230519/fat-growing-around-muscles-could-be-a-silent-killer"
     }
+  ],
+  "workouts": [
+    {
+      "id": 1,
+      "title": "Decline Reverse Crunch",
+      "description": "Abdominal - Will primarily target the lower abs.",
+      "images": "https://www.bodybuilding.com/images/2020/xdb/originals/xdb-49n-decline-reverse-crunch-m1-16x9.jpg",
+      "link": "https://www.youtube.com/watch?v=46N6KkTnph0"
+    },
+    {
+      "id": 2,
+      "title": "Barbell Squats",
+      "description": "Quads - Will primarily target quadriceps, hamstrings and glutes.",
+      "images": "https://www.bodybuilding.com/images/2020/xdb/originals/xdb-50b-barbell-back-squat-m2-16x9.jpg",
+      "link": "https://www.youtube.com/watch?v=hZEc10L7fcg&list=PLhZ-ad3aOi8mbu1ryqheMnGRzCdFbN0cQ&index=2"
+    },
+    {
+      "id": 3,
+      "title": "Standing Dumbbell Curls",
+      "description": "Biceps - Will primarily target biceps.",
+      "images": "https://www.bodybuilding.com/images/2020/xdb/originals/xdb-2d-dumbbell-biceps-curl-f2-16x9.jpg",
+      "link": "https://www.youtube.com/watch?v=XhHNeSjL_gQ&list=PLhZ-ad3aOi8mro6QAjJYrNR8Rnl-8dmHD&index=17"
+    },
+    {
+      "id": 4,
+      "title": "Barbell Bench Press",
+      "description": "Chest - Will primarily target chest.",
+      "images": "https://www.bodybuilding.com/images/2020/xdb/originals/xdb-81e-bench-press-f1-16x9.jpg",
+      "link": "https://www.youtube.com/watch?v=GcT-1zLjaKk&list=PLhZ-ad3aOi8mQYl2yQ2ZDcfMbf58bE95L"
+    },
+    {
+      "id": 5,
+      "title": "Barbell Bent Over Row",
+      "description": "Back - Will primarily target mid-back.",
+      "images": "https://www.bodybuilding.com/images/2020/xdb/originals/xdb-01b-barbell-bent-over-row-m2-16x9.jpg",
+      "link": "https://www.youtube.com/watch?v=Nr6Gu67wf40&list=PLhZ-ad3aOi8mU6qrs-Zv73Vdp6BWyFAN7&index=3"
+    },
+    {
+      "id": 6,
+      "title": "Standing Barbell Shoulder Press",
+      "description": "Chest - Will primarily target chest shoulders.",
+      "images": "https://www.bodybuilding.com/images/2020/xdb/originals/xdb-48e-seated-barbell-shoulder-press-m2-16x9.jpg",
+      "link": "https://www.youtube.com/watch?v=5QSuBRkZPoo&list=PLhZ-ad3aOi8nw6fioQ0iJTkuGG9bq3Q92"
+    }
   ]
 }
