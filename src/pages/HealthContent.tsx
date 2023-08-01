@@ -29,23 +29,27 @@ const HealthContent = () => {
   };
 
   return (
-    <div className={styles.healthContent}>
-      <SingleCarousel
-        cardName={styles.title}
-        title="Health Articles"
-        data={pageCards || []}
-      ></SingleCarousel>
-      <SingleCarousel
-        cardName={styles.title}
-        title="Health Tips"
-        data={pageCards || []}
-      ></SingleCarousel>
-      <SingleCarousel
-        cardName={styles.title}
-        title="Health News"
-        data={pageCards || []}
-      ></SingleCarousel>
-    </div>
+    <>
+      <div className={styles.healthContent}>
+        <div className={styles.overlay}>
+          <SingleCarousel
+            cardName={styles.title}
+            title="Health Articles"
+            data={pageCards || []}
+          ></SingleCarousel>
+          <SingleCarousel
+            cardName={styles.title}
+            title="Health Tips"
+            data={pageCards || []}
+          ></SingleCarousel>
+          <SingleCarousel
+            cardName={styles.title}
+            title="Health News"
+            data={pageCards || []}
+          ></SingleCarousel>
+        </div>
+      </div>
+    </>
   );
 };
 

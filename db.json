@@ -11,8 +11,7 @@
       "id": 2,
       "title": "Health Content",
       "description": "Managing and creating health content for you routine",
-      "images": "http://localhost:3003/static/media/healthcare.59a604a292755a6a653b.png",
-      "link": "health-content"
+      "images": "http://localhost:3001/static/media/healthcare.59a604a292755a6a653b.png"
     }
   ],
   "health-content": [

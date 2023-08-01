@@ -134,7 +134,8 @@
 
 .searchIcon {
   color: rgb(0, 0, 0);
-  margin: 2px;
+  margin: 0.1em;
+  margin-left: 9.3em;
   position: absolute;
 }
 
