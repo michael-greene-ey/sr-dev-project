@@ -30,21 +30,23 @@ const HealthContent = () => {
 
   return (
     <div className={styles.workout}>
-      <SingleCarousel
-        cardName={styles.title}
-        title="Full Body Workout"
-        data={pageCards || []}
-      ></SingleCarousel>
-      <SingleCarousel
-        cardName={styles.title}
-        title="Leg Days"
-        data={pageCards || []}
-      ></SingleCarousel>
-      <SingleCarousel
-        cardName={styles.title}
-        title="Bro Splits"
-        data={pageCards || []}
-      ></SingleCarousel>
+      <div className={styles.overlay}>
+        <SingleCarousel
+          cardName={styles.title}
+          title="Full Body Workout"
+          data={pageCards || []}
+        ></SingleCarousel>
+        <SingleCarousel
+          cardName={styles.title}
+          title="Leg Days"
+          data={pageCards || []}
+        ></SingleCarousel>
+        <SingleCarousel
+          cardName={styles.title}
+          title="Bro Splits"
+          data={pageCards || []}
+        ></SingleCarousel>
+      </div>
     </div>
   );
 };

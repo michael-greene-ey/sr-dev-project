@@ -4,11 +4,10 @@
   left: 100px;
 }
 
-.cardContainer .button {
-  background-color: rgb(243, 195, 0);
-  color: rgb(0, 62, 82);
+.carding button {
   border: none;
   text-decoration: none;
+  background-color: rgba(0, 62, 82, 0.5);
 }
 
 .cardContainer .carding {
@@ -28,6 +27,7 @@
 .cardContainer {
   display: flex;
   justify-content: space-evenly;
+  filter: drop-shadow(30px 20px 4px rgba(0, 62, 82, 0.5));
 }
 
 .title {

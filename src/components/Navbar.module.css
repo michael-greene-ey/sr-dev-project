@@ -16,6 +16,10 @@
   flex: 3.2;
 }
 
+.navLinks a:hover {
+  color: rgb(243, 195, 0);
+}
+
 .navbar {
   display: flex;
   align-items: center;

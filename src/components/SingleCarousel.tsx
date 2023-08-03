@@ -28,10 +28,7 @@ const SingleCarousel = (props: SingleCarouselInterface) => {
 
   return (
     <div className={props.cardName}>
-      {/* <div className={styles.spaceContainer}> */}
       <h1 className={styles.title}>{props.title}</h1>
-      {/* <div className={styles.space}></div> */}
-      {/* </div> */}
       <Carousel responsive={responsive} className={styles.carouselContainer}>
         {props.data.map((card) => {
           return (
