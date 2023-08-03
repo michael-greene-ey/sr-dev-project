@@ -1,7 +1,6 @@
 .workout {
   background-image: url("../assests/images/workout.jpg");
   background-size: cover;
-  min-height: 62vh;
   padding-top: 40px;
   padding-bottom: 25px;
 }
