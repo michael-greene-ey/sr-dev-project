@@ -1,0 +1,16 @@
+.workout {
+  background-image: url("../assests/images/workout.jpg");
+  background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: -2.5em 0;
+  padding: 2.5em 0;
+}
+
+.title {
+  color: rgb(0, 62, 82);
+}
