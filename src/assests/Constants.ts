@@ -9,3 +9,4 @@ const BASE = "http://localhost:3000";
 export const HEALTH_CONTENT = `${BASE}/health-content`;
 export const HOMEPAGE = `${BASE}/homepage`;
 export const WORKOUT = `${BASE}/workouts`;
+export const TODOLIST = `${BASE}/to-do-list`;

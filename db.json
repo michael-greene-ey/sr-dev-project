@@ -22,7 +22,6 @@
       "images": "https://www.alzsd.org/wp-content/uploads/2020/03/health-wellness.png",
       "link": "https://www.health.harvard.edu/topics/staying-healthy"
     },
-
     {
       "id": 2,
       "title": "The Heart Attack",
@@ -30,7 +29,6 @@
       "images": "https://img.wbmdstatic.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/centerpieces/centerpiece_heart_minoca/1800x1200_webmd_stealthheart.jpg?resize=540px:*&output-quality=75",
       "link": "https://www.webmd.com/heart-disease/story/MINOCA-heart-attack"
     },
-
     {
       "id": 3,
       "title": "Ut Enim Ad ",
@@ -38,7 +36,6 @@
       "images": "https://domf5oio6qrcr.cloudfront.net/medialibrary/7728/f9c50076-c282-4c08-a146-65611f579eae16207267394332.jpg",
       "link": "https://www.webmd.com/men/news/20230616/testosterone-safe-for-most-older-men"
     },
-
     {
       "id": 4,
       "title": "Duis Aute",
@@ -46,7 +43,6 @@
       "images": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqKpIuir7Dkza5Y5IL3a6M1VNCupyf9SVZYg&usqp=CAU",
       "link": "https://www.webmd.com/allergies/news/20230615/food-allergies-affect-people-color-more-than-white-people"
     },
-
     {
       "id": 5,
       "title": "Excepteur Sint",
@@ -54,7 +50,6 @@
       "images": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCJnYAP811kG3kgdjMFYr0G0DZx7EHS3fijw&usqp=CAU",
       "link": "https://www.webmd.com/vitamins-and-supplements/news/20230612/multivitamins-may-fill-nutrient-gaps"
     },
-
     {
       "id": 6,
       "title": "Nulla Pharetra",
@@ -62,7 +57,6 @@
       "images": "https://magazine.columbia.edu/sites/default/files/styles/wysiwyg_full_width_image/public/2019-08/Exp_cell-phones_0.jpg?itok=y0WBMwsO",
       "link": "https://www.webmd.com/parenting/news/20230605/does-your-kid-need-a-summer-vacation-from-smartphones"
     },
-
     {
       "id": 7,
       "title": "Cras Adipiscing",
@@ -70,7 +64,6 @@
       "images": "data:image/jpeg;base64,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",
       "link": "https://www.webmd.com/baby/news/20230601/wisdom-of-morrie-an-antidote-to-todays-loneliness"
     },
-
     {
       "id": 8,
       "title": "Scelerisque Ferm",
@@ -128,6 +121,44 @@
       "description": "Chest - Will primarily target chest shoulders.",
       "images": "https://www.bodybuilding.com/images/2020/xdb/originals/xdb-48e-seated-barbell-shoulder-press-m2-16x9.jpg",
       "link": "https://www.youtube.com/watch?v=5QSuBRkZPoo&list=PLhZ-ad3aOi8nw6fioQ0iJTkuGG9bq3Q92"
+    }
+  ],
+  "to-do-list": [
+    {
+      "id": 1,
+      "title": "Food",
+      "actionItem": "Pick up groceries from Whole Food",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "title": "Food",
+      "actionItem": "Prepare meal-prep",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "title": "Food",
+      "actionItem": "Decide to break up each meat",
+      "completed": false
+    },
+    {
+      "id": 4,
+      "title": "Food",
+      "actionItem": "Check off the categories on types of protein",
+      "completed": true
+    },
+    {
+      "title": "food",
+      "actionItem": "Take me out to the park",
+      "id": 462.135248208231,
+      "completed": false
+    },
+    {
+      "title": "food",
+      "actionItem": "Run all the way home",
+      "id": 685.7576968865709,
+      "completed": false
     }
   ]
 }

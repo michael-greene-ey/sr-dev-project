@@ -55,7 +55,11 @@ const Navbar = () => {
         </div>
         <div className={styles.navLinks}>
           {navLinkItems.map((link) => {
-            return <Link to={link.url}>{link.title}</Link>;
+            return (
+              <Link key={link.id} to={link.url}>
+                {link.title}
+              </Link>
+            );
           })}
         </div>
         <div className={styles.hamburgerMenuContainer} onClick={toggleMenu}>
