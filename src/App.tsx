@@ -6,7 +6,7 @@ import Homepage from "./pages/Homepage";
 import HealthContent from "./pages/HealthContent";
 import { Routes, Route } from "react-router-dom";
 import MealPlan from "./pages/MealPlan";
-import ToDoList from "./pages/ToDoList";
+import ToDoList from "./pages/ToDoListPage";
 import Workouts from "./pages/Workouts";
 
 function App() {
